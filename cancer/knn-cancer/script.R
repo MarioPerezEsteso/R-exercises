@@ -1,6 +1,6 @@
 require("class")
-source("functions.R")
 setWorkingDir(path)
+source("functions.R")
 cancer <- read.csv("cancer/cancerData.csv", stringsAsFactors = F, header = T)
 cancer <- cancer[-1] # Delete id column
 cancer$diagnosis <- factor(cancer$diagnosis, levels = c("B", "M"), labels = c("Benign", "Malignant"))

@@ -1,6 +1,6 @@
 require("class")
-source("functions.R")
 setWorkingDir(path)
+source("functions.R")
 iris <- read.table("iris/iris.data", header = F, sep = ',')
 colnames(iris) <- c("Sepal.Length", "Sepal.Width", "Petal.Length", "Petal.Width", "Species")
 iris_normalized <- as.data.frame(lapply(iris[1:4], normalize))
