@@ -1,4 +1,3 @@
-path <- "path/to/R/folder/examples"
 
 normalize <- function (x) {
   return ((x - min(x))/(max(x)-min(x)))

@@ -1,5 +1,5 @@
 require("class")
-setWorkingDir(path)
+setwd("~/Dropbox//Documents//COM//ejercicios//R")
 source("functions.R")
 cancer <- read.csv("cancer/cancerData.csv", stringsAsFactors = F, header = T)
 cancer <- cancer[-1] # Delete id column

@@ -1,5 +1,5 @@
 require("class")
-setWorkingDir(path)
+setwd("~/Dropbox//Documents//COM//ejercicios//R")
 source("functions.R")
 iris <- read.table("iris/iris.data", header = F, sep = ',')
 colnames(iris) <- c("Sepal.Length", "Sepal.Width", "Petal.Length", "Petal.Width", "Species")
